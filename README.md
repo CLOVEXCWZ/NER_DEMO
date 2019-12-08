@@ -1,4 +1,6 @@
-<font size=10>**NER（中文）**</font>
+<font size=10>**NER（中文实体命名识别）**</font>
+
+
 
 **光健字: 中文命名实体识别 NER  BILSTM CRF IDCNN BERT**
 
@@ -15,6 +17,10 @@
 # 主要库的版本
 
 本项目是基于keras（Using TensorFlow backend）以下是主要库的版本
+
+- python = 3.6.8
+
+
 
 - keras == 2.2.4
 - keras_contrib == 0.0.2
@@ -49,7 +55,7 @@
 
 
 - 直接在IDE里运行项目
-  - 直接运行 Model文件夹
+  - 直接运行 train.py文件
 
 - 命令行
   - python train.py
@@ -68,7 +74,7 @@
 
 BERT采用batch_size=32 因为值为64的时候所使用GPU内存不够
 
- 
+ **以下数据基于MSRA数据集，以8:2的拆分(训练集:测试集)。测试结果**
 
 |         模型         | 准确率 |  F1   | 召回率 |
 | :------------------: | :----: | :---: | :----: |
